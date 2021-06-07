@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Enquiries</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     </head>
     <body>
         <div class="contaier">
@@ -42,11 +43,11 @@
                     e.stopPropagation();
                     alert('Enquiry Complete');
 
-                    e.tagert.elements.map((el) => {
+                    e.target.elements.map((el) => {
                         alert(`${el.name}: ${el.value}`)
                     })
 
-                    e.tagert.reset();
+                    e.target.reset();
                 })
             })
         </script>
