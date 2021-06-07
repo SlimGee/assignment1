@@ -47,6 +47,10 @@
                     alert('Enquiry Complete');
 
                     Array.prototype.forEach.call(e.target.elements, (el) => {
+                        if (el.type == 'button') {
+                            return;
+                        }
+                        
                         alert(`${el.name}: ${el.value}`)
                     })
 
